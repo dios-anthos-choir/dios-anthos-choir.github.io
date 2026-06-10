@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert — Dios Anthos Choir</title>
+  <meta name="description" content="Dios Anthos Choirの出演予定ステージ情報です。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/concert.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Dios Anthos Choir</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="concert.html" class="active">Concert</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="recruit.html">Recruit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="cap page-hero-cap">Concert</p>
+        <h1 class="en page-hero-title">Concert</h1>
+        <p class="jp page-hero-sub">出演予定</p>
+      </div>
+    </section>
+
+    <!-- Concert List -->
+    <section class="concert-section">
+      <div class="container">
+
+        <!--
+          =====================================================
+          ★ 出演予定の追加方法
+          <article class="concert-card"> をコピーして
+          日付・タイトル・詳細を書き換えてください。
+
+          予定がない場合は concert-empty を表示、
+          concert-list を非表示にしてください。
+          =====================================================
+        -->
+
+        <!-- 予定なしの場合はこちらを表示 ( concert-list を削除または削除してください ) -->
+        <div class="concert-empty">
+          <p class="en concert-empty-title">No upcoming concerts<br>at this time.</p>
+          <p class="jp concert-empty-note">現在、単独演奏会の予定はありません。<br>出演情報が決まりましたらこちらでお知らせします。<br>SNSでも随時情報を発信しています。</p>
+          <div class="concert-empty-sns">
+            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">Instagram →</a>
+            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">Facebook →</a>
+            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">X →</a>
+          </div>
+        </div>
+
+        <!--
+          ★ 出演予定が決まったらここのコメントを外してください
+          <ul class="concert-list">
+            <li>
+              <article class="concert-card">
+                <div class="concert-card-date">
+                  <span class="en concert-date-month">Jan</span>
+                  <span class="en concert-date-day">25</span>
+                  <span class="en concert-date-year">2026</span>
+                </div>
+                <div class="concert-card-body">
+                  <p class="cap concert-card-cap">Joint Concert</p>
+                  <h2 class="jp concert-card-title">コンサートタイトル</h2>
+                  <dl class="concert-card-info">
+                    <dt class="cap">会場</dt>
+                    <dd class="jp">会場名・住所</dd>
+                    <dt class="cap">開演</dt>
+                    <dd class="jp">14:00（開場 13:30）</dd>
+                    <dt class="cap">入場</dt>
+                    <dd class="jp">無料</dd>
+                  </dl>
+                </div>
+              </article>
+            </li>
+          </ul>
+        -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-logo">Dios Anthos Choir</span>
+    <ul class="footer-sns">
+      
+      <li><a href="https://www.facebook.com/DAChoir/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://x.com/EccentricChoir" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.youtube.com/channel/UCRp1ciYvbqt11qqKlRjzUeg" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">© Dios Anthos Choir. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

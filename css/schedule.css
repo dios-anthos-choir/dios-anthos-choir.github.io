@@ -1,0 +1,158 @@
+/* ── Page Hero (recruit.cssと共通デザイン) ── */
+.page-hero {
+  background: var(--ink);
+  padding: 3.5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background: rgba(232, 213, 176, 0.15);
+}
+
+.page-hero-cap {
+  color: rgba(232, 213, 176, 0.4);
+  margin-bottom: 1rem;
+}
+
+.page-hero-title {
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-sub {
+  font-size: 13px;
+  color: rgba(232, 213, 176, 0.35);
+  letter-spacing: 0.18em;
+  font-weight: 200;
+}
+
+/* ── Schedule Section ── */
+.schedule-section {
+  padding: 3rem 0 4rem;
+}
+
+.schedule-updated {
+  margin-bottom: 2rem;
+  color: var(--gray-mid);
+}
+
+/* ── Table ── */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 0.5px solid var(--border);
+}
+
+.schedule-table thead tr {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.schedule-table th {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  padding: 0.75rem 1rem 0.75rem 0;
+  text-align: left;
+}
+
+.col-date  { width: 180px; }
+.col-time  { width: 180px; }
+.col-place { width: auto; }
+
+/* ── Row ── */
+.schedule-row {
+  border-bottom: 0.5px solid var(--border);
+  transition: background 0.15s;
+}
+
+.schedule-row:hover {
+  background: var(--off-white);
+}
+
+.schedule-row.past {
+  opacity: 0.35;
+}
+
+/* ── Date Cell ── */
+.date-cell {
+  padding: 1.4rem 1rem 1.4rem 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.date-month {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--gray-mid);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.date-day {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1;
+  font-style: italic;
+}
+
+.date-weekday {
+  font-size: 11px;
+  color: var(--gray-mid);
+  font-weight: 300;
+}
+
+/* ── Time & Place Cells ── */
+.time-cell,
+.place-cell {
+  padding: 1.4rem 1rem 1.4rem 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ink);
+  vertical-align: middle;
+  line-height: 1.6;
+}
+
+.time-cell {
+  color: #555;
+}
+
+/* ── Note ── */
+.schedule-note {
+  margin-top: 2rem;
+  font-size: 12px;
+  color: var(--gray-mid);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* ── Responsive ── */
+@media (max-width: 560px) {
+  .col-date  { width: 120px; }
+  .col-time  { width: 130px; }
+
+  .date-day  { font-size: 22px; }
+
+  .time-cell,
+  .place-cell { font-size: 13px; }
+
+  .schedule-table th,
+  .time-cell,
+  .place-cell,
+  .date-cell { padding-right: 0.5rem; }
+}

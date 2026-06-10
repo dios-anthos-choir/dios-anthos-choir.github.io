@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>練習日程 — Dios Anthos Choir</title>
+  <meta name="description" content="Dios Anthos Choirの練習日程です。月2回、日曜日に高知県内で練習しています。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Dios Anthos Choir</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="concert.html">Concert</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="schedule.html" class="active">Schedule</a></li>
+          <li><a href="recruit.html">Recruit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="cap page-hero-cap">Schedule</p>
+        <h1 class="en page-hero-title">Practice<br>Schedule</h1>
+        <p class="jp page-hero-sub">練習日程</p>
+      </div>
+    </section>
+
+    <!-- Schedule Table -->
+    <section class="schedule-section">
+      <div class="container">
+
+        <!-- 更新日 -->
+        <p class="schedule-updated cap">Last updated: <time id="updated">2025年6月</time></p>
+
+        <!--
+          =====================================================
+          ★ 練習日程の編集方法
+          各 <tr class="schedule-row"> が1回の練習です。
+          日付・時間・場所を書き換えてください。
+
+          過去の練習は class="schedule-row past" にすると
+          グレーアウトして表示されます。
+          =====================================================
+        -->
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th class="col-date">日付</th>
+              <th class="col-time">時間</th>
+              <th class="col-place">場所</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- ▼ ここから練習日程を記入 ▼ -->
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Jul</span>
+                <span class="en date-day">6</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">枝川コミュニティセンター</td>
+            </tr>
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Jul</span>
+                <span class="en date-day">20</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">江ノ口コミュニティセンター</td>
+            </tr>
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Aug</span>
+                <span class="en date-day">3</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">枝川コミュニティセンター</td>
+            </tr>
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Aug</span>
+                <span class="en date-day">17</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">江ノ口コミュニティセンター</td>
+            </tr>
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Sep</span>
+                <span class="en date-day">7</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">枝川コミュニティセンター</td>
+            </tr>
+
+            <tr class="schedule-row">
+              <td class="date-cell">
+                <span class="en date-month">Sep</span>
+                <span class="en date-day">21</span>
+                <span class="jp date-weekday">日</span>
+              </td>
+              <td class="jp time-cell">14:00 〜 16:30</td>
+              <td class="jp place-cell">江ノ口コミュニティセンター</td>
+            </tr>
+
+            <!-- ▲ ここまで ▲ -->
+
+          </tbody>
+        </table>
+
+        <p class="schedule-note jp">※ 日程・場所は変更になる場合があります。詳細はSNSでもお知らせします。</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-logo">Dios Anthos Choir</span>
+    <ul class="footer-sns">
+      
+      <li><a href="https://www.facebook.com/DAChoir/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://x.com/EccentricChoir" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.youtube.com/channel/UCRp1ciYvbqt11qqKlRjzUeg" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">© Dios Anthos Choir. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

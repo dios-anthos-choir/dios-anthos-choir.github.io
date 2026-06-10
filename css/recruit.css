@@ -1,0 +1,225 @@
+/* ── Page Hero (共通ページヘッダー) ── */
+.page-hero {
+  background: var(--ink);
+  padding: 3.5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background: rgba(232, 213, 176, 0.15);
+}
+
+.page-hero-cap {
+  color: rgba(232, 213, 176, 0.4);
+  margin-bottom: 1rem;
+}
+
+.page-hero-title {
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-sub {
+  font-size: 13px;
+  color: rgba(232, 213, 176, 0.35);
+  letter-spacing: 0.18em;
+  font-weight: 200;
+}
+
+/* ── Lead ── */
+.recruit-lead {
+  padding: 3rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.recruit-lead-text {
+  font-size: 15px;
+  line-height: 2.2;
+  color: #444;
+  font-weight: 300;
+  max-width: 640px;
+}
+
+/* ── Info Grid ── */
+.recruit-info {
+  padding: 3rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.5px solid var(--border);
+}
+
+.info-card {
+  padding: 2rem 1.5rem;
+  border-right: 0.5px solid var(--border);
+}
+
+.info-card:last-child {
+  border-right: none;
+}
+
+.info-card-label {
+  margin-bottom: 1rem;
+}
+
+.info-card-value {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.info-card-note {
+  font-size: 12px;
+  line-height: 2;
+  color: #666;
+  font-weight: 300;
+}
+
+/* ── Flow ── */
+.recruit-flow {
+  padding: 3.5rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.recruit-flow-heading {
+  margin-bottom: 2.5rem;
+}
+
+.flow-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.flow-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.75rem 0;
+  border-top: 0.5px solid var(--border);
+}
+
+.flow-item:last-child {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.flow-num {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--gray-light);
+  line-height: 1;
+  padding-top: 2px;
+  font-style: italic;
+}
+
+.flow-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+.flow-desc {
+  font-size: 13px;
+  line-height: 2;
+  color: #666;
+  font-weight: 300;
+}
+
+/* ── CTA ── */
+.recruit-cta {
+  background: var(--ink);
+}
+
+.recruit-cta-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.recruit-cta-cap {
+  color: rgba(232, 213, 176, 0.35);
+  margin-bottom: 0.6rem;
+}
+
+.recruit-cta-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.recruit-cta-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .info-card:nth-child(1),
+  .info-card:nth-child(2) {
+    border-bottom: 0.5px solid var(--border);
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    border-right: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .info-card:last-child {
+    border-bottom: none;
+  }
+
+  .flow-item {
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+  }
+
+  .flow-num {
+    font-size: 20px;
+  }
+
+  .recruit-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

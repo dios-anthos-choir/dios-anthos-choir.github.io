@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video — Dios Anthos Choir</title>
+  <meta name="description" content="Dios Anthos Choirの演奏動画です。YouTubeチャンネルもご覧ください。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Dios Anthos Choir</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="concert.html">Concert</a></li>
+          <li><a href="video.html" class="active">Video</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="recruit.html">Recruit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="cap page-hero-cap">Video</p>
+        <h1 class="en page-hero-title">Video</h1>
+        <p class="jp page-hero-sub">演奏動画</p>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="container">
+
+        <!--
+          =====================================================
+          ★ 動画の追加方法
+          動画が増えたら <video-empty> を削除し、
+          下の <ul class="video-grid"> のコメントを外して
+          YouTube の動画IDを埋め込んでください。
+
+          動画IDはYouTubeのURLの ?v= 以降の文字列です。
+          例: https://www.youtube.com/watch?v=XXXXXXXXXXX
+              → 動画ID は XXXXXXXXXXX
+
+          <iframe> の src を
+          https://www.youtube.com/embed/動画ID
+          に書き換えてください。
+          =====================================================
+        -->
+
+        <!-- 動画なしの場合 -->
+        <div class="video-empty">
+          <p class="en video-empty-title">Videos coming<br>soon.</p>
+          <p class="jp video-empty-note">演奏動画は準備中です。<br>公開までの間は、YouTubeチャンネルをご覧ください。</p>
+          <a href="https://www.youtube.com/channel/UCRp1ciYvbqt11qqKlRjzUeg" class="btn btn-dark video-empty-btn" target="_blank" rel="noopener">YouTubeチャンネルへ →</a>
+        </div>
+
+        <!--
+          ★ 動画が増えたらここのコメントを外してください
+
+          <ul class="video-grid">
+            <li class="video-item">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/動画ID"
+                  title="動画タイトル"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+              <p class="jp video-title">動画タイトル</p>
+              <p class="cap video-date">2024</p>
+            </li>
+          </ul>
+        -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-logo">Dios Anthos Choir</span>
+    <ul class="footer-sns">
+      <li><a href="https://x.com/EccentricChoir" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.facebook.com/DAChoir/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.youtube.com/channel/UCRp1ciYvbqt11qqKlRjzUeg" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">© Dios Anthos Choir. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

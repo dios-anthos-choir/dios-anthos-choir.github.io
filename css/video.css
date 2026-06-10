@@ -1,0 +1,120 @@
+/* ── Page Hero ── */
+.page-hero {
+  background: var(--ink);
+  padding: 3.5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background: rgba(232, 213, 176, 0.15);
+}
+
+.page-hero-cap {
+  color: rgba(232, 213, 176, 0.4);
+  margin-bottom: 1rem;
+}
+
+.page-hero-title {
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-sub {
+  font-size: 13px;
+  color: rgba(232, 213, 176, 0.35);
+  letter-spacing: 0.18em;
+  font-weight: 200;
+}
+
+/* ── Video Section ── */
+.video-section {
+  padding: 3.5rem 0 4rem;
+}
+
+/* ── Empty State ── */
+.video-empty {
+  padding: 4rem 0;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.video-empty-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 300;
+  color: var(--gray-light);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5rem;
+}
+
+.video-empty-note {
+  font-size: 14px;
+  line-height: 2.2;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.video-empty-btn {
+  font-size: 10px;
+}
+
+/* ── Video Grid ── */
+.video-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* 16:9アスペクト比 */
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: var(--off-white);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.video-date {
+  color: var(--gray-mid);
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}

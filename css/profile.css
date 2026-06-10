@@ -1,0 +1,182 @@
+/* ── Page Hero ── */
+.page-hero {
+  background: var(--ink);
+  padding: 3.5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  background: rgba(232, 213, 176, 0.15);
+}
+
+.page-hero-cap {
+  color: rgba(232, 213, 176, 0.4);
+  margin-bottom: 1rem;
+}
+
+.page-hero-title {
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-sub {
+  font-size: 13px;
+  color: rgba(232, 213, 176, 0.35);
+  letter-spacing: 0.18em;
+  font-weight: 200;
+}
+
+/* ── About ── */
+.profile-about {
+  padding: 3.5rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.profile-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.profile-about-heading {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+}
+
+.profile-about-text {
+  font-size: 14px;
+  line-height: 2.2;
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.profile-about-text:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+/* Facts */
+.profile-facts {
+  display: flex;
+  gap: 0;
+  border: 0.5px solid var(--border);
+}
+
+.profile-fact {
+  flex: 1;
+  padding: 1.2rem 1.5rem;
+  border-right: 0.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-fact:last-child {
+  border-right: none;
+}
+
+.profile-fact-value {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.profile-fact-label {
+  color: var(--gray-mid);
+}
+
+/* ── History / Timeline ── */
+.profile-history {
+  padding: 3.5rem 0 4rem;
+}
+
+.profile-history-heading {
+  margin-bottom: 2.5rem;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.6rem 0;
+  border-top: 0.5px solid var(--border);
+}
+
+.timeline-item:last-child {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.timeline-year {
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--gray-light);
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.timeline-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 4px;
+}
+
+.timeline-event {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.8;
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+  .profile-about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 72px 1fr;
+    gap: 1rem;
+  }
+
+  .timeline-year {
+    font-size: 24px;
+  }
+
+  .profile-facts {
+    flex-direction: column;
+  }
+
+  .profile-fact {
+    border-right: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .profile-fact:last-child {
+    border-bottom: none;
+  }
+}
