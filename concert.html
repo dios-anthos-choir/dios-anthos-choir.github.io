@@ -48,50 +48,80 @@
         <!--
           =====================================================
           ★ 出演予定の追加方法
-          <article class="concert-card"> をコピーして
-          日付・タイトル・詳細を書き換えてください。
-
-          予定がない場合は concert-empty を表示、
-          concert-list を非表示にしてください。
+          <li> をコピーして日付・タイトル・詳細を書き換えてください。
+          予定がなくなったら concert-list ごと削除し、
+          concert-empty のコメントを外してください。
           =====================================================
         -->
 
-        <!-- 予定なしの場合はこちらを表示 ( concert-list を削除または削除してください ) -->
-        <div class="concert-empty">
-          <p class="en concert-empty-title">No upcoming concerts<br>at this time.</p>
-          <p class="jp concert-empty-note">現在、単独演奏会の予定はありません。<br>出演情報が決まりましたらこちらでお知らせします。<br>SNSでも随時情報を発信しています。</p>
-          <div class="concert-empty-sns">
-            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">Instagram →</a>
-            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">Facebook →</a>
-            <a href="#" class="cap concert-empty-link" target="_blank" rel="noopener">X →</a>
-          </div>
-        </div>
+        <ul class="concert-list">
+
+          <li>
+            <article class="concert-card">
+              <div class="concert-card-date">
+                <span class="en concert-date-month">Jun</span>
+                <span class="en concert-date-day">21</span>
+                <span class="en concert-date-year">2026</span>
+              </div>
+              <div class="concert-card-body">
+                <p class="cap concert-card-cap">合唱祭</p>
+                <h2 class="jp concert-card-title">第67回高知県合唱祭</h2>
+                <dl class="concert-card-info">
+                  <dt class="cap">会場</dt>
+                  <dd class="jp">高知市文化プラザかるぽーと<br>四国銀行ホール</dd>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="concert-card">
+              <div class="concert-card-date">
+                <span class="en concert-date-month">Jun</span>
+                <span class="en concert-date-day">28</span>
+                <span class="en concert-date-year">2026</span>
+              </div>
+              <div class="concert-card-body">
+                <p class="cap concert-card-cap">ジョイフルステージ</p>
+                <h2 class="jp concert-card-title">第49回全日本おかあさんコーラス<br>四国支部高知大会</h2>
+                <dl class="concert-card-info">
+                  <dt class="cap">会場</dt>
+                  <dd class="jp">高知県立美術館ホール</dd>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="concert-card">
+              <div class="concert-card-date">
+                <span class="en concert-date-month">Jul</span>
+                <span class="en concert-date-day">26</span>
+                <span class="en concert-date-year">2026</span>
+              </div>
+              <div class="concert-card-body">
+                <p class="cap concert-card-cap">コンクール</p>
+                <h2 class="jp concert-card-title">第35回高知県合唱コンクール</h2>
+                <dl class="concert-card-info">
+                  <dt class="cap">会場</dt>
+                  <dd class="jp">高知市春野文化ホールピアステージ<br>大ホール</dd>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+        </ul>
 
         <!--
-          ★ 出演予定が決まったらここのコメントを外してください
-          <ul class="concert-list">
-            <li>
-              <article class="concert-card">
-                <div class="concert-card-date">
-                  <span class="en concert-date-month">Jan</span>
-                  <span class="en concert-date-day">25</span>
-                  <span class="en concert-date-year">2026</span>
-                </div>
-                <div class="concert-card-body">
-                  <p class="cap concert-card-cap">Joint Concert</p>
-                  <h2 class="jp concert-card-title">コンサートタイトル</h2>
-                  <dl class="concert-card-info">
-                    <dt class="cap">会場</dt>
-                    <dd class="jp">会場名・住所</dd>
-                    <dt class="cap">開演</dt>
-                    <dd class="jp">14:00（開場 13:30）</dd>
-                    <dt class="cap">入場</dt>
-                    <dd class="jp">無料</dd>
-                  </dl>
-                </div>
-              </article>
-            </li>
-          </ul>
+          ★ 予定がない場合はこちらのコメントを外してください
+          <div class="concert-empty">
+            <p class="en concert-empty-title">No upcoming concerts<br>at this time.</p>
+            <p class="jp concert-empty-note">現在、出演予定はありません。<br>情報が決まりましたらこちらでお知らせします。<br>SNSでも随時情報を発信しています。</p>
+            <div class="concert-empty-sns">
+              <a href="https://x.com/EccentricChoir" class="cap concert-empty-link" target="_blank" rel="noopener">X →</a>
+              <a href="https://www.facebook.com/DAChoir/" class="cap concert-empty-link" target="_blank" rel="noopener">Facebook →</a>
+            </div>
+          </div>
         -->
 
       </div>
@@ -102,9 +132,8 @@
   <footer class="site-footer">
     <span class="footer-logo">Dios Anthos Choir</span>
     <ul class="footer-sns">
-      
-      <li><a href="https://www.facebook.com/DAChoir/" target="_blank" rel="noopener">Facebook</a></li>
       <li><a href="https://x.com/EccentricChoir" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.facebook.com/DAChoir/" target="_blank" rel="noopener">Facebook</a></li>
       <li><a href="https://www.youtube.com/channel/UCRp1ciYvbqt11qqKlRjzUeg" target="_blank" rel="noopener">YouTube</a></li>
     </ul>
     <p class="footer-copy">© Dios Anthos Choir. All rights reserved.</p>
